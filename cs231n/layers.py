@@ -27,7 +27,13 @@ def affine_forward(x, w, b):
     ###########################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
+    # print(f"x: {x.shape}, w: {w.shape} b: {b.shape}")
+    desired_shape = x.shape[1:]
+    d = np.prod(desired_shape)
+    # print(f"desired shape = {desired_shape}, d={d}")
+    x_reshaped = np.reshape(x, (x.shape[0], d))
+    # print(f"x_reshaped: {x_reshaped.shape}")
+    out = np.dot(x_reshaped, w) + b
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ###########################################################################
