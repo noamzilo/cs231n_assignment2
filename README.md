@@ -2,4 +2,6 @@
 Stanford CS231n: Convolutional Neural Networks for Visual Recognition - Ex2.
 
 
-# The point in this exercise was going through the derivatives, which are available here
+This is not ready yet, a work in progress.
+
+Once the derivation process is ready it will be uploaded to a blog and linked here.
